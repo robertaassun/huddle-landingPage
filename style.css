@@ -1,48 +1,97 @@
+:root {
+  font-size: 18px;
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
-header{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    background: url("images/bg-hero-desktop.svg") no-repeat var(--very-pale-cyan);
+    background-size: cover;
 }
 
+nav{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .logoNav{
-    max-width: 100%;
-    max-height: 30px;
-    display: block;
+    width: 200px;
+    height: 35px;
 }
 
 .btnNav{
-    border: none;
-    font-size: 1rem;
-    font-weight: 700;
-    width: 180px;
-    height: 50px;
+    width: 200px;
     border-radius: 30px;
+    border:none;
+    font-weight: 700;
+    font-size: 16px;
+    background: var(--very-pale-cyan);
 }
 .btnNav:hover{
-    background-color: #05252e;
-    color: dimgrey;
+    background: var(--very-dark-cyan);
+    color: var(--grayish-blue);
     transition: .3s;
 }
 
-div{
-    display: inline-block;
+.build{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-h2{
-    text-align: center;
-    
+    margin-top: 5rem;
 }
 
-p{
+.btFree{
+    margin: 2rem;
+    background: var(--pink);
+    border: none;
+    border-radius: 30px;
+    width: 280px;
+    height: 60px;
+    color: var(--very-pale-cyan);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btFree:hover{
+    opacity: 70%;
+    transition: .3s;
+}
+
+.txtBuild{
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
-    max-width: 200px;
+    align-items: center;
+    max-width: 600px;
+}
+
+.imgBuild{
+    max-width: 700px;
+}
+
+.growTogether{
+    display: inline-block;
+    flex-direction: row;
+}
+
+.titleGrw{
+    display: block;
+    flex-direction: column;
+}
+
+.txtGrw{
+    display: block;
+    flex-direction: column;
 }
