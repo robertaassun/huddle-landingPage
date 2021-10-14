@@ -14,7 +14,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    background: url("images/bg-hero-desktop.svg") no-repeat var(--very-pale-cyan);
+    /* background: url("images/bg-hero-desktop.svg") no-repeat var(--very-pale-cyan); */
     background-size: cover;
 }
 
@@ -34,7 +34,7 @@ nav{
     border-radius: 30px;
     border:none;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     background: var(--very-pale-cyan);
 }
 .btnNav:hover{
@@ -55,11 +55,28 @@ nav{
     background: var(--pink);
     border: none;
     border-radius: 30px;
-    width: 280px;
-    height: 60px;
+    width: 240px;
+    height: 50px;
     color: var(--very-pale-cyan);
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.btnFree{
+    margin-top: 1rem;
+    background: var(--pink);
+    border: none;
+    border-radius: 30px;
+    width: 240px;
+    height: 50px;
+    color: var(--very-pale-cyan);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btnFree:hover{
+    opacity: 70%;
+    transition: .3s;
 }
 
 .btFree:hover{
@@ -81,17 +98,167 @@ nav{
     max-width: 700px;
 }
 
-.growTogether{
-    display: inline-block;
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.titleCard{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 1rem;
+}
+
+.txtCard{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    color: var(--grayish-blue);
+    font-size: 16px;
+}
+
+.imgCard{
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    height: 200px;
+    padding-left: 3rem;
+}
+
+.cardMiddle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.titleCardMiddle{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 1rem;
+}
+
+.txtCardMiddle{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    color: var(--grayish-blue);
+    font-size: 16px;
+}
+
+.imgCardMiddle{
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    height: 200px;
+    padding-right: 3rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boxInside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 220px;
+    border-radius: 1rem;
+    background-color: var(--very-pale-cyan);
+    transition: .3s ease-out;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--very-dark-cyan);
+    color: var(--very-pale-cyan);
+    padding: 2rem;
+}
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    max-width: 250px;
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 2rem;
+}
+
+.imgIconLocation{
+    margin-right: 1rem;
+    width: 15px;
+    height: 18px;
+}
+
+.imgIconPhone{
+    margin-right: 1rem;
+    width: 15px;
+    height: 18px;
+}
+
+.imgIconMail{
+    margin-right: 1rem;
+    width: 22px;
+    height: 16px;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+a{
+    color: var(--very-pale-cyan);
+    text-decoration: none;
+    font-size: 12px;
+    padding: .5rem;
+}
+a:first-child{
+    padding-top: 0;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.socialMedia{
+    display: flex;
     flex-direction: row;
 }
 
-.titleGrw{
-    display: block;
-    flex-direction: column;
+i:first-child{
+    margin-left: 5rem;
 }
 
-.txtGrw{
-    display: block;
-    flex-direction: column;
+i{
+    margin-left: 2rem;
+}
+
+.copyRight{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--very-dark-cyan); 
+}
+
+.copy{
+    font-size: 12px;
+    margin-bottom: 2rem;
+    color: var(--very-pale-cyan);
 }
